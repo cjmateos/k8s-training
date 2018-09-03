@@ -1,0 +1,30 @@
+{
+  "url": "http://YOUR-SERVICE-IP:PORT",
+  "server": {
+    "port": 2368,
+    "host": "0.0.0.0"
+  },
+  "database": {
+     "client": "mysql",
+     "connection": {
+       "host": "mysql",
+       "user": "root",
+       "password": "12345678",
+       "database": "ghost_db",
+       "charset": "utf8"
+     }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  }
+}
