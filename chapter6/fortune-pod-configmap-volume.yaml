@@ -24,9 +24,6 @@ spec:
     - name: config
       mountPath: /etc/nginx/conf.d
       readOnly: true
-    - name: config
-      mountPath: /tmp/whole-fortune-config-volume
-      readOnly: true
   volumes:
   - name: html
     emptyDir: {}
