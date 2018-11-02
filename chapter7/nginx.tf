@@ -16,7 +16,7 @@ resource "kubernetes_pod" "nginx" {
      name  = "nginx"
 
      port {
-       container_port = 80
+       container_port = 8080
      }
    }
  }
